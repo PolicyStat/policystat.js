@@ -6,7 +6,7 @@ object.main = 'lib/index.js'
 object.version = '1.0.0'
 object.description = 'PolicyStat strings for easy reuse'
 Package.github_repo('mightyiam/policystat.js')
-object.copyright = require('./').copyrightNotice
+object.copyright = 'Copyright © ' + new Date().getFullYear() + ' PolicyStat LLC'
 object.author = require('mightyiam').authorStr
 object.devDependencies = {
   mightyiam: '^1.1.5',
