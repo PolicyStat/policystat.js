@@ -5,7 +5,15 @@ var expectedSchema = {
   name: {
     pretty: String
   },
-  copyrightNotice: String
+  copyrightNotice: String,
+  openSource: {
+    license: {
+      name: {
+        pretty: String,
+        spdx: String
+      }
+    }
+  }
 }
 var ps = require('../')
 

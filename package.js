@@ -1,5 +1,6 @@
 var auto = require('auto-package')
 var content = auto.content
+var policystat = require('./')
 
 content.name = 'policystat'
 content.main = 'lib/index.js'
@@ -18,9 +19,11 @@ content.devDependencies = {
   'verb-cli': '^0.4.4'
 }
 content.scripts = {
-    license: 'license-generator install bsd-3-clause -n "PolicyStat LLC"',
+    license: 'license-generator install ' +
+      policystat.openSource.license.name.spdx.toLowerCase() +
+      ' -n "PolicyStat LLC"',
     lint: 'standard',
     unit: 'jasmine',
     test: 'npm run lint && npm run license && npm run unit'
 }
-content.license = 'BSD-3-Clause'
+content.license = policystat.openSource.license.name.pretty
