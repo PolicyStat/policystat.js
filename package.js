@@ -14,11 +14,13 @@ content.devDependencies = {
   standard: '*',
   jasmine: '^2.2.1',
   invalid: '^0.0.2',
+  'license-generator': '^0.0.13',
   'verb-cli': '^0.4.4'
 }
 content.scripts = {
+    license: 'license-generator install bsd-3-clause -n "PolicyStat LLC"',
     lint: 'standard',
     unit: 'jasmine',
-    test: 'npm run lint && npm run unit'
+    test: 'npm run lint && npm run license && npm run unit'
 }
 content.license = 'BSD-3-Clause'
