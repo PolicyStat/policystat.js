@@ -2,7 +2,10 @@
 
 var invalid = require('invalid')
 var expectedSchema = {
-    copyrightNotice: String
+  name: {
+    pretty: String
+  },
+  copyrightNotice: String
 }
 var ps = require('../')
 
