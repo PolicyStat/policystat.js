@@ -8,10 +8,8 @@ var expectedSchema = {
   copyrightNotice: String,
   openSource: {
     license: {
-      name: {
-        pretty: String,
-        spdx: String
-      }
+      pretty: String,
+      spdx: String
     }
   }
 }
