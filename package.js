@@ -1,6 +1,6 @@
 var auto = require('auto-package')
 var content = auto.content
-var policystat = require('./')
+var policystat = require('./lib')
 var psPrettyName = policystat.name.pretty
 var license = policystat.openSource.license.spdx
 
