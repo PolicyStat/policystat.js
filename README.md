@@ -4,4 +4,4 @@ PolicyStat LLC strings for easy reuse
 
 Copyright © 2015 PolicyStat LLC
 
-License: BSD 3–Clause
+License: BSD-3-Clause

@@ -2,6 +2,7 @@ var auto = require('auto-package')
 var content = auto.content
 var policystat = require('./')
 var psPrettyName = policystat.name.pretty
+var license = policystat.openSource.license.spdx
 
 content.name = 'policystat'
 content.main = 'lib/index.js'
@@ -21,10 +22,10 @@ content.devDependencies = {
 }
 content.scripts = {
     license: 'license-generator install ' +
-      policystat.openSource.license.name.spdx.toLowerCase() +
+      license.toLowerCase() +
       ' -n "' + psPrettyName + '"',
     lint: 'standard',
     unit: 'jasmine',
     test: 'npm run lint && npm run license && npm run unit'
 }
-content.license = policystat.openSource.license.name.pretty
+content.license = license
