@@ -1,24 +1,24 @@
-var Package = require('auto-package')
-var object = Package.package
+var auto = require('auto-package')
+var content = auto.content
 
-object.name = 'policystat'
-object.main = 'lib/index.js'
-object.version = '1.0.0'
-object.description = 'PolicyStat strings for easy reuse'
-Package.github_repo('mightyiam/policystat.js')
-object.copyright = 'Copyright © ' + new Date().getFullYear() + ' PolicyStat LLC'
-object.author = require('mightyiam').authorStr
-object.devDependencies = {
+content.name = 'policystat'
+content.main = 'lib/index.js'
+content.version = '1.0.0'
+content.description = 'PolicyStat strings for easy reuse'
+auto.githubRepo('mightyiam/policystat.js')
+content.copyright = 'Copyright © ' + new Date().getFullYear() + ' PolicyStat LLC'
+content.author = require('mightyiam').authorStr
+content.devDependencies = {
   mightyiam: '^1.1.5',
-  'auto-package': '^0.1.1',
+  'auto-package': '^0.2.0',
   standard: '*',
   jasmine: '^2.2.1',
   invalid: '^0.0.2',
   'verb-cli': '^0.4.4'
 }
-object.scripts = {
+content.scripts = {
     lint: 'standard',
     unit: 'jasmine',
     test: 'npm run lint && npm run unit'
 }
-object.license = 'BSD-3-Clause'
+content.license = 'BSD-3-Clause'
