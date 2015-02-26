@@ -3,7 +3,7 @@ var content = auto.content
 
 content.name = 'policystat'
 content.main = 'lib/index.js'
-content.version = '1.0.0'
+auto.versionFile()
 content.description = 'PolicyStat strings for easy reuse'
 auto.githubRepo('mightyiam/policystat.js')
 content.copyright = 'Copyright © ' + new Date().getFullYear() + ' PolicyStat LLC'
