@@ -21,4 +21,4 @@ object.scripts = {
     unit: 'jasmine',
     test: 'npm run lint && npm run unit'
 }
-object.license = 'MIT'
+object.license = 'BSD-3-Clause'
