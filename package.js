@@ -15,7 +15,6 @@ content.devDependencies = {
   mightyiam: '^1.1.5',
   'auto-package': '^0.2.0',
   standard: '*',
-  invalid: '^0.0.2',
   'license-generator': '^0.0.13',
   'verb-cli': '^0.4.4'
 }
