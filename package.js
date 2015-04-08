@@ -15,7 +15,6 @@ content.devDependencies = {
   mightyiam: '^1.1.5',
   'auto-package': '^0.2.0',
   standard: '*',
-  jasmine: '^2.2.1',
   invalid: '^0.0.2',
   'license-generator': '^0.0.13',
   'verb-cli': '^0.4.4'
@@ -25,7 +24,6 @@ content.scripts = {
       license.toLowerCase() +
       ' -n "' + psPrettyName + '"',
     lint: 'standard',
-    unit: 'jasmine',
-    test: 'npm run lint && npm run license && npm run unit'
+    test: 'npm run lint && npm run license'
 }
 content.license = license
